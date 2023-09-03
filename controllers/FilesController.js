@@ -85,7 +85,7 @@ export default class FilesController {
 
       if (!file) {
         res.status(400).json({ error: 'Parent not found' });
-	return;
+        return;
       }
       if (file.type !== VALID_FILE_TYPES.folder) {
         res.status(400).json({ error: 'Parent is not a folder' });
